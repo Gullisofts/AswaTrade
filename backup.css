@@ -1,0 +1,1107 @@
+@import url(https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap);@import url(https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap);body {
+  background-color: #eee;
+  direction: rtl;
+}
+
+body .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+hr {
+  height: 12px !important;
+  border: 0 !important;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5) !important;
+  width: 100% !important;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.redborder {
+  border-color: #d9534f;
+}
+
+.greenborder {
+  border-color: #5cb85c;
+}
+
+.hiddenel {
+  display: none;
+}
+
+.pckcss {
+  color: #16a085;
+  font-weight: bold;
+}
+
+.datcss {
+  color: tomato;
+  font-weight: bold;
+}
+
+.unitcss {
+  color: #2980b9;
+  font-weight: bold;
+}
+
+.itmcss {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.p_msg {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  z-index: 6000;
+}
+
+.p_msg p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.confirm_msg_box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm_msg_box .row {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm_msg_box .row a {
+  color: #fff !important;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 30%;
+}
+
+.barcode_err {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.pagehead {
+  width: 100%;
+  background: #dcdde1;
+}
+
+.pagehead p {
+  margin: 0;
+  color: #000;
+  font-weight: bold;
+}
+
+header {
+  background-color: #2f3640;
+  min-height: 50px;
+  max-width: 100%;
+  color: #fff !important;
+  font-family: "Cairo", sans-serif;
+}
+
+header .row {
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+header span:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  width: 40%;
+}
+
+header span:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 20%;
+}
+
+header span:first-child img {
+  height: 57px;
+  width: 90px;
+}
+
+.bg-bod {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  min-height: 900px;
+}
+
+.mainContainer {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100% !important;
+}
+
+aside {
+  position: absolute;
+  width: 60px;
+  right: 0;
+  z-index: 100;
+  background: #2f3640;
+  color: #fff;
+  font-family: "Cairo", sans-serif;
+  transition: 0.4s ease-in-out;
+}
+
+aside ul {
+  list-style-type: none;
+  top: 0;
+  right: 0;
+  text-align: right;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+aside ul li {
+  position: relative;
+  width: 100%;
+  transition: 0.4s ease-in;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+aside ul .alone_list:hover {
+  background-color: #81ecec;
+}
+
+aside ul li a {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+aside ul li a .icon {
+  position: relative;
+  font-size: 24px;
+  color: #00cec9;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+aside ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+
+aside:hover {
+  width: 300px;
+}
+
+/* Inner Sidebar Start */
+aside .inner_list {
+  list-style-type: none;
+  top: 0;
+  right: 0;
+  text-align: right;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  margin-right: 50px;
+  display: none;
+}
+
+aside .inner_list li {
+  position: relative;
+  width: 100%;
+  transition: 0.4s ease-in;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+aside .inner_list li:hover {
+  background-color: #81ecec;
+}
+
+aside .inner_list li a {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+aside .inner_list li a .icon {
+  position: relative;
+  font-size: 24px;
+  color: #00cec9;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+aside .inner_list li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+/* Inner Sidebar End */
+
+.content {
+  width: 100%;
+  margin-right: 60px;
+  text-align: right;
+  font-family: "Tajawal", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content .salesorder {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.homecharts {
+  margin: 0;
+}
+
+.saveproc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.saveproc a {
+  width: 30%;
+}
+
+/*
+#removeitem
+{
+    //padding-right: 0;
+}
+*/
+
+.delete_eae {
+  text-align: left !important;
+  direction: ltr !important;
+  display: block !important;
+  text-indent: 5px;
+}
+
+.rmitem {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rmitem i {
+  color: #fff;
+}
+
+.procitems .form-group:not(:last-child) {
+  padding-left: 1px;
+}
+
+.procitems .itemsale {
+  cursor: pointer !important;
+}
+
+.itemsheaders {
+  margin-left: 0px;
+  margin-right: 0px;
+  justify-content: center;
+  align-items: center;
+  background: #2f3640;
+}
+
+.itemsheaders div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.itemsheaders div:last-child {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.itemsheaders div:last-child label {
+  padding-right: 0;
+  padding-left: -5;
+}
+
+.itemsheaders label {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#removeitem {
+  padding-left: 15px !important;
+}
+
+#removeitem_edit {
+  padding-left: 15px !important;
+}
+
+.enterunitenum .row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.enterunitenum .btn {
+  color: #fff !important;
+}
+
+.enterunitenum .unimsg {
+  width: 100%;
+}
+
+#getpr {
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+  cursor: pointer;
+}
+
+#unitnum {
+  border-radius: 0rem;
+}
+
+#unitnumlab {
+  border-radius: 0rem 0.25rem 0.25rem 0rem;
+}
+
+#nameprocres {
+  margin-top: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #95a5a6;
+}
+
+#nameprocres_edit {
+  margin-top: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #95a5a6;
+}
+
+#nameprocres_exp {
+  margin-top: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #95a5a6;
+}
+
+#nameprocres p {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+}
+
+#nameprocres_edit p {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+}
+
+#nameprocres_exp p {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+}
+
+#nameprocres p:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#nameprocres p:not(:last-child) {
+  border-bottom: 1px solid #95a5a6;
+}
+
+#nameprocres_edit p:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#nameprocres_edit p:not(:last-child) {
+  border-bottom: 1px solid #95a5a6;
+}
+
+#nameprocres_exp p:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#nameprocres_exp p:not(:last-child) {
+  border-bottom: 1px solid #95a5a6;
+}
+
+.fa-eye {
+  font-size: 20px;
+  color: #3498db;
+  cursor: pointer;
+}
+
+.fa-trash {
+  font-size: 20px;
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+.fa-edit {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-tabs {
+  padding-right: 0;
+}
+
+.tbl_head {
+  background: #2f3640;
+  color: #fff;
+  border: 0;
+}
+
+.table thead th {
+  vertical-align: baseline;
+  text-align: center;
+  border: 0;
+}
+
+.table th {
+  padding: 0px 5px 0px 5px;
+  vertical-align: baseline;
+  text-align: center;
+}
+
+.historytblbod td {
+  border-top: 1px solid #bdc3c7;
+  overflow-x: auto !important;
+  text-align: center;
+}
+
+#soldid {
+  width: 60%;
+  overflow: auto !important;
+  text-align: right;
+}
+
+#historyupperinfo {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px 10px 0px;
+  margin-top: 5px;
+}
+
+#historyupperinfo h6 {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+#historyupperinfo h6:first-child {
+  background: #03A9F4;
+  padding: 10px;
+  color: #ecf0f1;
+  margin-right: 0px;
+}
+
+#historyupperinfo h6:last-child {
+  background: #2ecc71;
+  padding: 10px;
+  color: #ecf0f1;
+}
+
+#period_dates {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#period_dates {
+  margin-top: 20px;
+}
+
+#period_dates a {
+  width: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+#search_proc {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#search_proc {
+  margin-top: 20px;
+}
+
+#search_proc a {
+  width: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lowqty {
+  border-color: #f1c40f;
+  border-width: 3px;
+}
+
+.verylowqty {
+  border-color: #e74c3c;
+  border-width: 3px;
+}
+
+.mainsearchrow {
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0rem 0.25rem 0.25rem 0rem;
+}
+
+.mainsearchrow a {
+  color: #fff !important;
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+}
+
+.nodata_message {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.searchopts a {
+  cursor: pointer;
+}
+
+.fa-trash-alt {
+  color: #e74c3c;
+}
+
+.fa-edit {
+  color: #16a085;
+}
+
+.fa-exchange-alt {
+  color: #2ecc71;
+}
+
+.cont_view {
+  z-index: 200;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  overflow: auto;
+  display: none;
+}
+
+.cont_view .cont_view_closer {
+  width: 100%;
+  padding: 15px;
+}
+
+.cont_view .cont_view_closer .fa-times {
+  font-size: 40px;
+  color: #e74c3c;
+  float: right;
+  cursor: pointer;
+}
+
+.cont_view .inner {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont_view .inner_inner {
+  background: #eee !important;
+  border-radius: 0.25rem;
+}
+
+.cont_view .inner_inner .tbl_head tr th {
+  padding: 10px;
+}
+
+.pharmacy_invoice {
+  flex-direction: column !important;
+}
+
+.pharmacy_invoice .inner_inner {
+  background-color: #ffffff !important;
+  width: 100% !important;
+}
+
+.pharmacy_invoice .inner_inner .invoice_info {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pharmacy_invoice .inner_inner .invoice_info .invoice_otherinfo {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pharmacy_invoice .inner_inner .invoice_info .invoice_otherinfo .date_name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pharmacy_invoice .inner_inner .invoice_info .invoice_otherinfo .date_name p {
+  width: 100%;
+  text-align: right;
+}
+
+.pharmacy_invoice .inner_inner .invoice_info .invoice_otherinfo .pharmacy_logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.pharmacy_invoice .inner_inner .invoice_sum {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.pharmacy_invoice .inner_inner .invoice_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pharmacy_invoice .print_option {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+.pharmacy_invoice .print_option .fa-print {
+  font-size: 50px;
+  color: #3498db;
+  cursor: pointer;
+}
+
+#cont_view_edit {
+  font-family: "Cairo", sans-serif;
+}
+
+#cont_view_edit .inner {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#cont_view_edit .inner .inner_inner {
+  padding: 10px;
+}
+
+#cont_view_edit label {
+  text-align: right !important;
+  direction: rtl !important;
+  float: right;
+}
+
+#cont_view_edit h6 {
+  width: 100%;
+  text-align: center;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+#cont_view_edit .btn {
+  color: #fff !important;
+  width: 40%;
+}
+
+#cont_view_edit .savebtn_ghx {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainsearchrowsp {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mainsearchrowsp a {
+  color: #fff !important;
+}
+
+.pagination {
+  padding-right: 0;
+}
+
+.pagination a {
+  color: #000 !important;
+}
+
+.new_incoming a {
+  color: #fff !important;
+}
+
+.incoming_newco_field {
+  display: none;
+}
+
+.new_item_form {
+  display: none;
+}
+
+.new_com_alert {
+  display: none;
+}
+
+.inv_alert {
+  display: none;
+}
+
+.nobarcode,
+.existbarcode,
+.existname,
+.nocompany,
+.noname,
+.noam,
+.noprice,
+.nonop,
+.nonou,
+.nosip,
+.nototalsum {
+  display: none;
+}
+
+#nameprocres_incoming {
+  margin-top: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #95a5a6;
+}
+
+#nameprocres_incoming p {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+}
+
+#nameprocres_incoming p:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#nameprocres_incoming p:not(:last-child) {
+  border-bottom: 1px solid #95a5a6;
+}
+
+.search_invoice_box {
+  display: none;
+}
+
+.detailed_search_co {
+  margin-top: 1.5rem !important;
+}
+
+.login_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.login-form-1 {
+  padding: 5%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-container form {
+  padding: 10%;
+}
+
+.btnSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form-1 .btnSubmit {
+  font-weight: 600;
+  color: #fff;
+  background-color: #0062cc;
+}
+
+.log_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings_pghead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logout_div a {
+  color: #f5f6fa !important;
+}
+
+.section_opener {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  background-color: #535c68;
+  color: #fff;
+  cursor: pointer;
+}
+
+.section_opener h6 {
+  margin-bottom: 0;
+}
+
+.section_to_open {
+  display: none;
+}
+
+.settings_error,
+.settings_success {
+  display: none;
+}
+
+.notice_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice_cont input {
+  width: 95%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.notice_cont span {
+  width: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: calc(1.5em + 0.75rem);
+  cursor: pointer;
+}
+
+.save_add {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sale_edit {
+  width: 95%;
+  direction: rtl;
+  text-align: right;
+  padding-top: 20px;
+}
+
+footer {
+  width: 100%;
+  background: #222f3e;
+  text-align: center;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  color: #f5f6fa;
+  margin: 0;
+}
+
+#addcorders {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cust_orders_options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#new_cust_order {
+  display: none;
+}
+
+#cont_view_so {
+  direction: rtl;
+  text-align: right;
+}
+
+#new_exp_noti {
+  display: none;
+}
+/* Invoice Modal Drugs */
+.inner_inner_inv_modal
+{
+  width: 80%;
+}
+.inner_inner_inv_modal #view_inv_modal_t
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.inner_inner_inv_modal .heading
+{
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #2f3640;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.inner_inner_inv_modal .heading p
+{
+  margin-bottom: 0;
+}
+.inner_inner_inv_modal .heading .actions
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#cont_del_invoice
+{
+  z-index: 1000000000;
+}
